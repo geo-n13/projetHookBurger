@@ -1,3 +1,5 @@
+package burger.controller;
+
 import java.util.ArrayList;
 
 public class Serveur {

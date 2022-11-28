@@ -1,3 +1,7 @@
+package burger.controller;
+
+import burger.controller.Client;
+
 import java.util.ArrayList;
 
 public class Restaurant {

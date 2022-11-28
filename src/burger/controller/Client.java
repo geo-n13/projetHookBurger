@@ -1,3 +1,7 @@
+package burger.controller;
+
+import burger.controller.Burger;
+
 import java.util.ArrayList;
 
 public class Client {

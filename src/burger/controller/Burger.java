@@ -1,3 +1,4 @@
+package burger.controller;
 
 public class Burger {
 	
