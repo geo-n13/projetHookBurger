@@ -5,11 +5,17 @@ import java.util.ArrayList;
 public class Serveur {
 	
 	public String nom;
-	public ArrayList<Table> tablesServi;
+
 	
 	Serveur(String nom){
 		this.nom = nom;
-		this.tablesServi = new ArrayList<>();
+	}
+
+	public void servirClient(Client client){
+		for (Burger burger : client.getCommandeBurger()){
+			client.getTable().note +=  burger.getPrixBurger();
+		}
+
 	}
 	
 	

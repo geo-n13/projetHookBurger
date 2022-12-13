@@ -5,29 +5,46 @@ import burger.controller.Burger;
 import java.util.ArrayList;
 
 public class Client {
-	
 	public String nom;
-	public ArrayList<Burger> burgers;
-	public float facture;
-	
-	Client(String nom, ArrayList<Burger> burgers,float facture){
+
+
+	public Table table;
+
+	public ArrayList<Burger> commandeBurger;
+
+
+	Client(String nom, ArrayList<Burger> burgers) {
 		this.nom = nom;
-		this.burgers = new ArrayList<>();
-		this.facture = 0;
-		
+		this.commandeBurger = burgers;
+
 	}
-	
-	public void commanderBurger(Burger burger) {
-		this.burgers.add(burger);
-		this.facture = this.facture + burger.prix;
-		
+
+
+
+
+
+	public void assoirTable(Table table){
+		this.table = table;
+
+		table.getClients().add(this);
 	}
-	
-	public void mangerBurger(Burger burger){
-		this.burgers.remove(burger);
+
+	public ArrayList<Burger> getCommandeBurger() {
+		return commandeBurger;
 	}
-	
-	
-	
-	
+
+	public void setCommandeBurger(ArrayList<Burger> commandeBurger) {
+		this.commandeBurger = commandeBurger;
+	}
+
+	public Table getTable() {
+		return table;
+	}
+
+	public void setTable(Table table) {
+		this.table = table;
+	}
+
+
+
 }
