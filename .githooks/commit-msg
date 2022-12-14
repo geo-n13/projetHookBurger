@@ -23,4 +23,4 @@ DIR=$(dirname "$0")
 
 
 # Java >= 11
-exec java $DIR/CommitMsg.java "$@" "$1" 
+exec java $DIR/CommitMsg.java "$@"  
