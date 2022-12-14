@@ -18,9 +18,6 @@ public class PreCommit {
 		while ((i = fr.read()) != -1)
 			commitMessage.append((char)i);
 
-		System.out.print(commitMessage);
-
-
     if (commitMessage.length() > 10){
       System.out.print("Commit effectué !");
     } else {
