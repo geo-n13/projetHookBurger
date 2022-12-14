@@ -6,7 +6,7 @@
 import java.io.FileReader;
 import java.io.IOException;
 
-public class PreCommit {
+public class CommitMsg {
 	public static void main(String[] args) throws IOException {
 
 		// Passing the path to the file as a parameter
@@ -20,9 +20,10 @@ public class PreCommit {
 
     if (commitMessage.length() > 10){
       System.out.print("Commit effectué !");
+	  System.exit(0);
     } else {
-      System.out.print("Le messsag de commit doit contenir au moins 10 caracteres !");
-      System.exit(0);
+      System.out.print("[ERREUR]: Le messsage de commit doit contenir au moins 10 caracteres !");
+      System.exit(1);
     }
 	}
 }
