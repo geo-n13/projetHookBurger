@@ -20,7 +20,6 @@ public class Restaurant {
 	}
 
 
-
 	public void setChiffreAffaire(){
 		for (Table table : this.tables){
 			for (Client client : table.getClients()){

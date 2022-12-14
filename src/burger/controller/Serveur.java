@@ -6,7 +6,6 @@ public class Serveur {
 	
 	public String nom;
 
-	
 	Serveur(String nom){
 		this.nom = nom;
 	}
