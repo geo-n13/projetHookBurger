@@ -1,8 +1,3 @@
-// Java Program to Illustrate reading from
-
-// FileReader using FileReader class
-
-// Importing input output classes
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -18,12 +13,12 @@ public class CommitMsg {
 		while ((i = fr.read()) != -1)
 			commitMessage.append((char)i);
 
-    if (commitMessage.length() > 10){
-      System.out.print("Commit effectué !");
+ if (commitMessage.length() > 10){
+   System.out.println("Commit effectué !");
 	  System.exit(0);
-    } else {
-      System.out.print("[ERREUR]: Le messsage de commit doit contenir au moins 10 caracteres !");
-      System.exit(1);
-    }
+ } else {
+   System.out.println("[ERREUR]: Le messsage de commit doit contenir au moins 10 caracteres ! ");
+   System.exit(1);
+ }
 	}
 }
