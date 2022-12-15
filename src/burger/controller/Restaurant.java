@@ -12,15 +12,14 @@ public class Restaurant {
 
 	private double chiffreAffaire;
 
-	Restaurant(String nom){
+	public Restaurant(String nom){
 		this.nom = nom;
 		this.tables = new ArrayList<Table>();
 		this.serveur = new Serveur("Romain");
 		this.chiffreAffaire = 0;
 	}
 
-
-	public void setChiffreAffaire(){
+	public void setChiffreAffaire(int chiffreAffaire){
 		for (Table table : this.tables){
 			for (Client client : table.getClients()){
 				for (Burger burger : client.getCommandeBurger()){
@@ -29,6 +28,10 @@ public class Restaurant {
 			}
 
 		}
+	}
+
+	public double getChiffreAffaire() {
+		return chiffreAffaire;
 	}
 
 

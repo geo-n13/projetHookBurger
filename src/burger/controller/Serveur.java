@@ -6,7 +6,7 @@ public class Serveur {
 	
 	public String nom;
 
-	Serveur(String nom){
+	public Serveur(String nom){
 		this.nom = nom;
 	}
 
@@ -14,8 +14,6 @@ public class Serveur {
 		for (Burger burger : client.getCommandeBurger()){
 			client.getTable().note +=  burger.getPrixBurger();
 		}
-
 	}
-	
-	
+
 }

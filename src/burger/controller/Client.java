@@ -13,15 +13,11 @@ public class Client {
 	public ArrayList<Burger> commandeBurger;
 
 
-	Client(String nom, ArrayList<Burger> burgers) {
+	public Client(String nom, ArrayList<Burger> burgers) {
 		this.nom = nom;
 		this.commandeBurger = burgers;
 
 	}
-
-
-
-
 
 	public void assoirTable(Table table){
 		this.table = table;

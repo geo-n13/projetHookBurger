@@ -12,7 +12,7 @@ public class Table {
 	public double note;
 
 
-	Table(int numero){
+	public Table(int numero){
 		this.numero = numero;
 		this.clients = new ArrayList<>();
 		this.note = 0;
@@ -21,6 +21,27 @@ public class Table {
 	public ArrayList<Client> getClients() {
 		return clients;
 	}
+
+	public void setClients(ArrayList<Client> clients) {
+		this.clients = clients;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public double getNote() {
+		return note;
+	}
+
+	public void setNote(double note) {
+		this.note = note;
+	}
+
 
 
 

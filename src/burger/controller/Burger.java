@@ -1,12 +1,11 @@
 package burger.controller;
 
-enum Burger {
+public enum Burger {
 
 	CHEESEBURGER("Cheese Burger", 6.50),
 	DOUBLECHEESE("Doublecheese Burger", 8.00),
 	CHICKENBURGER("Chicken Burger", 9.00),
 	BURGERDUCHEF("Burger du Chef", 12.00);
-
 
 
 	private  String nomBurger;
