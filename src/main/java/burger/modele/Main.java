@@ -1,6 +1,7 @@
 package burger.modele;
 
 import burger.controller.*;
+import burger.test.ClientTest;
 
 public class Main {
     public static void main(String[] args) {
@@ -44,6 +45,7 @@ public class Main {
 
         LeB.setChiffreAffaire();
         System.out.println(" Le chiffre d'affaire de "+LeB.getNom() +" est de "+ LeB.getChiffreAffaire()+ " !!");
+
 
     }
 }
