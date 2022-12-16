@@ -43,7 +43,7 @@ public class Main {
         LeB.getServeur().servirClient(client3);
 
         LeB.setChiffreAffaire();
-        System.out.println(" Le chiffre d'affaire de "+LeB.getNom() +" est de "+ LeB.getChiffreAffaire());
+        System.out.println(" Le chiffre d'affaire de "+LeB.getNom() +" est de "+ LeB.getChiffreAffaire()+ " !!");
 
     }
 }
