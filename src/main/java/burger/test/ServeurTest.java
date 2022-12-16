@@ -13,9 +13,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class ServeurTest {
     @Test
     public void testServirClient(){
-        int prixArticle1 = 10;
-        int prixArticle2 = 20;
-        int prixArticle3 = 30;
+        int prixBurger1 = 10;
+        int prixBurger2 = 20;
+        int prixBurger3 = 30;
 
         Restaurant restaurant = new Restaurant("Restaurant d'Eliott");
         Client client = new Client("Geo MERCORE");
@@ -24,7 +24,7 @@ public class ServeurTest {
         table.clients.add(client);
         restaurant.tables.add(table);
 
-        table.setNote(prixArticle1 + prixArticle2 + prixArticle3);
+        table.setNote(prixBurger1 + prixBurger2 + prixBurger3);
 
         assertEquals(60, table.getNote());
     }
