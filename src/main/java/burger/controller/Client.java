@@ -13,9 +13,10 @@ public class Client {
 	public ArrayList<Burger> commandeBurger;
 
 
-	public Client(String nom, ArrayList<Burger> burgers) {
+	public Client(String nom) {
 		this.nom = nom;
-		this.commandeBurger = burgers;
+		this.commandeBurger = new ArrayList<Burger>();
+
 
 	}
 

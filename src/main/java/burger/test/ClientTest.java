@@ -13,7 +13,7 @@ public class ClientTest {
     @Test
     public void testAssoirTable(){
         Table table = new Table(1);
-        Client client = new Client("Geo MERCORE", new ArrayList<Burger>());
+        Client client = new Client("Geo MERCORE");
 
         table.clients.add(client);
 

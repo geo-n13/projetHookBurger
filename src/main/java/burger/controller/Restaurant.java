@@ -6,8 +6,13 @@ import java.util.ArrayList;
 
 public class Restaurant {
 
+
+
 	private String nom;
 	public ArrayList<Table> tables;
+
+
+
 	private Serveur serveur;
 
 	private double chiffreAffaire;
@@ -19,7 +24,7 @@ public class Restaurant {
 		this.chiffreAffaire = 0;
 	}
 
-	public void setChiffreAffaire(int chiffreAffaire){
+	public void setChiffreAffaire(){
 		for (Table table : this.tables){
 			for (Client client : table.getClients()){
 				for (Burger burger : client.getCommandeBurger()){
@@ -30,10 +35,24 @@ public class Restaurant {
 		}
 	}
 
+	public Serveur getServeur() {
+		return serveur;
+	}
+
+	public void setServeur(Serveur serveur) {
+		this.serveur = serveur;
+	}
+
 	public double getChiffreAffaire() {
 		return chiffreAffaire;
 	}
 
+	public String getNom() {
+		return nom;
+	}
 
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
 
 }
