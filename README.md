@@ -34,7 +34,7 @@ Pour ce faire, exécutez la commande suivante dans votre répertoire racine.
 
 **Geo Octavian MERCORE** _(g.mercore@epsi.fr)_
 
-**Eliott BERNARD ()** _(eliott.bernard@cgi.fr)_
+**Eliott BERNARD ()** _(eliott.bernard@epsi.fr)_
 
 **Nicolas AMELAISE** _(nicolas.amelaise@epsi.fr)_
 
