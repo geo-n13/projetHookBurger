@@ -22,9 +22,9 @@
 # get the path to this script file
 DIR=$(dirname "$0")
 user_name=$(git config user.name)
-ECHO user_name
+ECHO $user_name
 if [[ "$user_name" == "BigBern44" || "$user_name" == "geo-n13" ]]; then
-  # Verifie si le nom d'utilisateur git est egal a BigBern44 et geo-n13
+  # Verifie si le nom d'utilisateur git est égal a BigBern44 ou geo-n13
   exit 0
 else
   # Sinon empeche le push
